@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#main {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: rgba(237,221,121,0.5);
+}
+
+#header-title {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+}
+
+#title {
+    margin: 0;
+    color: rgb(189,130,96);
+    font-family: 'Galada', cursive;
+    font-size: 2em;
+}
+
+#subtitle {
+    margin: 0;
+    color: rgb(51,51,51);
+    font-style: italic;
+}
+
+#img-div {
+    width: 100%;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+#tribute-info {
+    padding: 1.5em 2em;
+    color: rgb(51,51,51);
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#quote {
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    font-size: 1.5em;
+    color: rgb(189,130,96);
+    text-align: center;
+    padding: 1em 0;
+}
+
+#tribute-link {
+    color: rgb(189,130,96);
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgba(237,221,121,0.5);
+    height: 1.5em;
+}
+
+@media screen and (min-width: 992px) {
+    #header {
+        flex-direction: row;
+        align-items: center;
+        border-radius: 50px 0 0 50px;
+        margin: 4em;
+        margin-right: 0;
+        width: 95%;
+    }
+
+    #header-title {
+        min-width: 30%;
+    }
+
+    #title {
+        font-size: 3em;
+    }
+
+    #subtitle {
+        font-size: 1.25em;
+        margin-top: 0.5em;
+    }
+
+    #img-div {
+        width: 70%;
+    }
+
+    #tribute-info {
+        padding: 2em 12em;
+    }
+
+    #quote {
+        padding: 2em;
+    }
+
+    footer {
+        margin: 0 4em;
+    }
+}
